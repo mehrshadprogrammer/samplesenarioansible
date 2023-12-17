@@ -1,0 +1,48 @@
+2023-12-17 03:37:34,370 p=20048 u=debian12 n=ansible | [WARNING]: Unable to parse
+/home/debian12/Desktop/ansiblesenario/inventory/main.yml as an inventory source
+
+2023-12-17 03:37:34,370 p=20048 u=debian12 n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-12-17 03:37:34,372 p=20048 u=debian12 n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2023-12-17 03:38:26,953 p=20127 u=debian12 n=ansible | db.test.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.137.209 port 22: Connection refused",
+    "unreachable": true
+}
+2023-12-17 03:38:27,107 p=20127 u=debian12 n=ansible | lb.test.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '192.168.137.109' (ED25519) to the list of known hosts.\r\nroot@192.168.137.109: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2023-12-17 03:38:33,032 p=20127 u=debian12 n=ansible | app1.test.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@192.168.137.22: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2023-12-17 03:38:36,970 p=20127 u=debian12 n=ansible | app2.test.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.250.166 port 22: Connection timed out",
+    "unreachable": true
+}
+2023-12-17 03:42:32,857 p=20314 u=debian12 n=ansible | app1.test.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: root@192.168.137.22: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2023-12-17 03:42:42,359 p=20314 u=debian12 n=ansible | app2.test.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.250.166 port 22: Connection timed out",
+    "unreachable": true
+}
+2023-12-17 03:42:50,055 p=20337 u=root n=ansible | app1.test.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '192.168.137.22' (ED25519) to the list of known hosts.\r\nroot@192.168.137.22: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2023-12-17 03:42:59,463 p=20337 u=root n=ansible | app2.test.net | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.250.166 port 22: Connection timed out",
+    "unreachable": true
+}
